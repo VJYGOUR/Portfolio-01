@@ -1,6 +1,6 @@
 import logo from "../assets/Logo 1.png";
 import search from "../assets/search.png";
-import menu from "../assets/menu.png";
+import menu from "../assets/Menu.png";
 function Header() {
   return (
     <div className="flex justify-between items-center px-20 pb-12 ">
