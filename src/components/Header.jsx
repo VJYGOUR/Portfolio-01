@@ -1,13 +1,38 @@
-import logo from "../assets/Logo 1.png";
-import search from "../assets/search.png";
-import menu from "../assets/Menu.png";
 function Header() {
   return (
-    <div className="flex justify-between items-center px-20 pb-12 ">
-      <img src={logo} alt="My Image" className="w-20 h-16 object-contain" />
-      <img src={search} alt="search" className="w-10 h-6 object-contain" />
-      <img src={menu} alt="menu" className="w-10 h-6 object-contain" />
-    </div>
+    <header className="w-full  bg-white shadow-md fixed top-0 left-0 z-50">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-12 py-4 flex items-center justify-between">
+        {/* Logo / Site Name */}
+        <a
+          href="#"
+          className="text-2xl font-bold text-gray-900 hover:text-black transition-colors"
+        >
+          YourName
+        </a>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex gap-6 text-gray-700 text-sm font-medium">
+          <a href="#about" className="hover:text-black transition-colors">
+            About
+          </a>
+          <a href="#work" className="hover:text-black transition-colors">
+            Work
+          </a>
+          <a href="#services" className="hover:text-black transition-colors">
+            Services
+          </a>
+          <a href="#contact" className="hover:text-black transition-colors">
+            Contact
+          </a>
+        </nav>
+
+        {/* Mobile Nav Placeholder */}
+        <div className="md:hidden">
+          {/* TODO: Add mobile menu toggle (e.g. Hamburger icon) */}
+          {/* Consider using Headless UI or Radix UI for accessibility */}
+        </div>
+      </div>
+    </header>
   );
 }
 
